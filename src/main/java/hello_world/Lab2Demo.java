@@ -1,4 +1,4 @@
-package org.example;
+package hello_world;
 import Lab2.Button;
 import Lab2.Balance;
 import Lab2.Bell;

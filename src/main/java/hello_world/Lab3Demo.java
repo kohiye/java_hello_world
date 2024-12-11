@@ -1,4 +1,4 @@
-package org.example;
+package hello_world;
 
 import Lab3.*;
 
