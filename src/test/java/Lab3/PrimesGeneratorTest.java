@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 
 import static org.junit.jupiter.api.Assertions.*;
 class PrimesGeneratorTest {
@@ -19,7 +20,13 @@ class PrimesGeneratorTest {
         test.add(11);
         test.add(13);
         assertEquals(test, primes);
-        System.out.println(primes);
-        System.out.println(primes.reversed());
+
+        ListIterator<Integer> prime_iter = primes.listIterator();
+        while(prime_iter.hasNext())
+            System.out.print(prime_iter.next() + " ");
+        System.out.println();
+        while(prime_iter.hasPrevious())
+            System.out.print(prime_iter.previous() + " ");
+        System.out.println();
     }
 }
