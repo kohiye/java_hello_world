@@ -16,7 +16,7 @@ class InvertMapTest {
         map.put("Hallo", 1);
         map.put("Bye", 10);
         map.put("Hello", -1);
-        rev.put(21, "Hallo");
+        rev.put(1, "Hallo");
         rev.put(-1, "Hello");
         rev.put(10, "Bye");
         assertEquals(rev, InvertMap.invert(map));
